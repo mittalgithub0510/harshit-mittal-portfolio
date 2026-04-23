@@ -4,7 +4,7 @@ export const certificates = [
     title: 'Web Development Internship Certificate',
     issuer: 'Prodigy InfoTech',
     description: 'Completed hands-on internship in web development, creating practical applications and reactive landing pages.',
-    filePath: '/certificates/prodigy.pdf',
+    filePath: '/prodigy-offer-letter.pdf',
     category: 'Internship'
   },
   {
@@ -36,7 +36,7 @@ export const certificates = [
     title: 'AWS Basics Certificate',
     issuer: 'Amazon Web Services',
     description: 'Foundational certification covering cloud computing concepts and core AWS services.',
-    filePath: '/certificates/aws.pdf',
+    filePath: '/image.png',
     category: 'Cloud & Infrastructure'
   }
 ];

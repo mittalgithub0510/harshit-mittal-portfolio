@@ -22,7 +22,7 @@ export const projects = [
     image: null,
     links: {
       project: '#',
-      code: '#'
+      code: 'https://github.com/mittalgithub0510/restaurant-ordering-system.git'
     }
   },
   {
@@ -31,10 +31,10 @@ export const projects = [
     description: 'Developed a responsive gallery application using API integration.',
     techStack: ['React.js', 'API Integration'],
     features: ['Dynamic image loading', 'Responsive design'],
-    image: null,
+    image: '/modern-gallery.png',
     links: {
-      project: '#',
-      code: '#'
+      project: 'https://startling-ganache-e4cdc8moderngallery.netlify.app/',
+      code: 'https://github.com/mittalgithub0510/react-gallery-app.git'
     }
   },
   {
@@ -45,7 +45,20 @@ export const projects = [
     image: null,
     links: {
       project: '#',
-      code: '#'
+      code: 'https://github.com/mittalgithub0510/PDF-GENERATOR.git'
+    }
+  },
+  {
+    id: 'library-system',
+    name: 'Library Management System',
+    description: 'Developed a Python-based application to digitally orchestrate library inventory, track borrowing, and maintain user records.',
+    techStack: ['Python'],
+    features: ['Digital inventory tracking', 'Automated book returning system', 'Secure user record management'],
+    impact: 'Streamlined traditional library operations by digitizing catalog interactions and significantly minimizing manual data entry.',
+    image: null,
+    links: {
+      project: '#',
+      code: 'https://github.com/mittalgithub0510/library-management-system.git'
     }
   }
 ];

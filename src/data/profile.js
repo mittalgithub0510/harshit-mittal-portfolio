@@ -10,6 +10,6 @@ export const profile = {
   resumeUrl: "/resume.pdf",
   heroImage: "/profile.jpg",
   contact: {
-    formspreeId: "YOUR_FORMSPREE_ID" // Replace with your code from formspree.io
+    formspreeId: "xojyypqr"
   }
 };

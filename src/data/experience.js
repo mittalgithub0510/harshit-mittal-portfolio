@@ -10,7 +10,7 @@ export const experience = [
       'Stopwatch project',
       'UI improvement tasks'
     ],
-    offerLetterLink: '#',
-    certificateLink: '#'
+    offerLetterLink: '/prodigy-offer-letter.pdf',
+    certificateLink: '/prodigy-certificate.pdf'
   }
 ];
