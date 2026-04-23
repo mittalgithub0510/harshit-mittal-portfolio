@@ -1,0 +1,92 @@
+.theme-page {
+  padding-top: 80px;
+}
+
+.theme-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.theme-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.theme-card {
+  padding: 40px 30px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid transparent !important;
+  transition: all var(--transition-normal);
+}
+
+.theme-card:hover {
+  border-color: rgba(59, 130, 246, 0.3) !important;
+}
+
+.active-theme {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.2) !important;
+}
+
+.theme-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  background: var(--bg-secondary);
+  color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--card-border);
+}
+
+.theme-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.theme-card p {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+.theme-palette {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.color-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.active-indicator {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--accent-color);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

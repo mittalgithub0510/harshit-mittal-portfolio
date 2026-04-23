@@ -1,0 +1,141 @@
+.page-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--text-primary);
+}
+
+.about-header {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.about-intro-content {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.about-intro-content p {
+  margin-bottom: 24px;
+  color: var(--text-secondary);
+}
+
+.about-intro-content p:last-child {
+  margin-bottom: 0;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.education-card {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.edu-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.edu-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.edu-college {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.edu-year {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.experience-detailed {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-detailed h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.exp-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .education-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+}
+
+.skill-box-wrapper {
+  padding: 24px;
+  height: 100%;
+}
+
+.skills-full-row {
+  margin-top: 24px;
+}
+
+.learning-carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+.learning-track {
+  display: flex;
+  gap: 32px;
+  width: max-content;
+  animation: slideTrackX 30s linear infinite;
+}
+
+.learning-track:hover {
+  animation-play-state: paused;
+}
+
+.learning-slide-group {
+  display: flex;
+  gap: 32px;
+}
+
+.slide-item {
+  width: 350px;
+  flex: 0 0 auto;
+}
+
+@keyframes slideTrackX {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 16px)); }
+}
+
+@media (max-width: 768px) {
+  .slide-item {
+    width: 290px;
+  }
+}

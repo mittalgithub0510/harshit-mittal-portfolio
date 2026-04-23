@@ -1,0 +1,278 @@
+.bg-alt {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.highlights-strip {
+  padding: 30px 0;
+  margin-top: -20px;
+  position: relative;
+  z-index: 10;
+}
+
+.strip-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.strip-item {
+  padding: 24px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.strip-num {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+
+.strip-text {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.projects-grid,
+.skills-grid,
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.skills-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.learning-grid {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  padding-bottom: 24px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.learning-grid::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.learning-grid > * {
+  flex: 0 0 auto;
+  width: 350px;
+  scroll-snap-align: start;
+}
+
+.learning-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.internship-card {
+  display: flex;
+  padding: 32px;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.internship-badge {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  background: var(--accent-color);
+  color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+}
+
+.internship-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.duration {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.desc {
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+}
+
+.tasks ul {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.tasks li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.task-icon {
+  color: var(--accent-color);
+}
+
+.internship-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.work-with-me {
+  padding: 100px 0;
+}
+
+.work-container {
+  padding: 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.work-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(0,0,0,0) 70%);
+  pointer-events: none;
+}
+
+.work-content p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 32px;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-secondary);
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  border: 1px solid var(--card-border);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.how-i-work {
+  margin-bottom: 40px;
+}
+
+.how-i-work h4 {
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.work-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-secondary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--card-border);
+}
+
+.mx-icon {
+  color: var(--accent-color);
+}
+
+.arrow-icon {
+  opacity: 0.5;
+}
+
+.work-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.mt-2 { margin-top: 8px; }
+.mb-4 { margin-bottom: 32px; }
+.d-inline-block { display: inline-block; }
+
+@media (max-width: 992px) {
+  .strip-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .internship-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .tasks li {
+    justify-content: center;
+  }
+  
+  .internship-actions {
+    justify-content: center;
+  }
+  
+  .work-container {
+    padding: 40px 20px;
+  }
+  
+  .work-actions {
+    flex-direction: column;
+  }
+}
+
+.skill-box-wrapper {
+  padding: 24px;
+  height: 100%;
+}
+
+.skills-full-row {
+  margin-top: 24px;
+}
