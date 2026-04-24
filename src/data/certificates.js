@@ -4,7 +4,7 @@ export const certificates = [
     title: 'Web Development Internship Certificate',
     issuer: 'Prodigy InfoTech',
     description: 'Completed hands-on internship in web development, creating practical applications and reactive landing pages.',
-    filePath: '/prodigy-offer-letter.pdf',
+    filePath: '/prodigy-certificate.pdf',
     category: 'Internship'
   },
   {

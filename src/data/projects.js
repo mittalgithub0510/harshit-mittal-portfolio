@@ -31,7 +31,7 @@ export const projects = [
     description: 'Developed a responsive gallery application using API integration.',
     techStack: ['React.js', 'API Integration'],
     features: ['Dynamic image loading', 'Responsive design'],
-    image: '/modern-gallery.png',
+    image: null,
     links: {
       project: 'https://startling-ganache-e4cdc8moderngallery.netlify.app/',
       code: 'https://github.com/mittalgithub0510/react-gallery-app.git'
