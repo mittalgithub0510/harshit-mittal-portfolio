@@ -50,22 +50,37 @@
 
 .learning-grid {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 32px;
-  overflow-x: auto;
-  padding-bottom: 24px;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
-}
-
-.learning-grid::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
 }
 
 .learning-grid > * {
-  flex: 0 0 auto;
-  width: 350px;
-  scroll-snap-align: start;
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+@media (max-width: 768px) {
+  .learning-grid {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 24px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .learning-grid::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  .learning-grid > * {
+    flex: 0 0 auto;
+    width: 300px;
+    max-width: none;
+    scroll-snap-align: start;
+  }
 }
 
 .learning-header {

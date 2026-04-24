@@ -1,5 +1,6 @@
 .skill-section-block {
   margin-bottom: 24px;
+  text-align: center;
 }
 
 .skill-title {
@@ -15,6 +16,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  justify-content: center;
 }
 
 .progress-layout {
