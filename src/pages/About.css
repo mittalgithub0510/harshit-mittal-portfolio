@@ -19,6 +19,13 @@
   line-height: 1.8;
 }
 
+@media (max-width: 768px) {
+  .about-intro-content {
+    text-align: left;
+    padding: 24px 20px;
+  }
+}
+
 .about-intro-content p {
   margin-bottom: 24px;
   color: var(--text-secondary);
@@ -90,6 +97,43 @@
     flex-direction: column;
     text-align: center;
     padding: 30px 20px;
+  }
+}
+
+.experience-detailed .tasks ul {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.experience-detailed .tasks li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.experience-detailed .tasks li svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .experience-detailed {
+    padding: 24px 20px;
+  }
+  .exp-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .exp-actions .btn {
+    width: 100%;
+  }
+  .experience-detailed .tasks ul {
+    padding-left: 0;
   }
 }
 

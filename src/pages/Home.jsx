@@ -169,7 +169,7 @@ const Home = () => {
                   View Offer Letter
                 </a>
                 <a href={experience[0].certificateLink} className="btn btn-secondary btn-sm" target="_blank" rel="noreferrer">
-                  View Completion Certificate
+                  View Certificate
                 </a>
               </div>
             </div>

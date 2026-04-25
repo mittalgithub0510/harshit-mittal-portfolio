@@ -262,16 +262,26 @@
 @media (max-width: 768px) {
   .internship-card {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
   }
   
   .tasks li {
-    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .task-icon {
+    margin-top: 4px;
+    flex-shrink: 0;
   }
   
   .internship-actions {
-    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .internship-actions .btn {
+    width: 100%;
   }
   
   .work-container {
@@ -280,6 +290,21 @@
   
   .work-actions {
     flex-direction: column;
+  }
+
+  .work-steps {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .arrow-icon {
+    transform: rotate(90deg);
+    margin: 0 auto;
+  }
+
+  .step {
+    justify-content: center;
   }
 }
 

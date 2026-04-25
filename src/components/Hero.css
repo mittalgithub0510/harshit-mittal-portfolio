@@ -155,9 +155,19 @@
     gap: 60px;
   }
 
+  .hero-section {
+    padding-bottom: 60px;
+  }
+
+  .hero-tagline {
+    padding: 0 20px;
+  }
+
   .hero-intro {
     max-width: 100%;
     margin: 0 auto 32px;
+    padding: 0 20px;
+    text-align: center;
   }
 
   .hero-buttons {
@@ -176,4 +186,23 @@
   .hero-role {
     font-size: 1.5rem;
   }
+
+  .profile-image-container {
+    width: 260px;
+    height: 260px;
+  }
+
+  .badge-1 {
+    animation: orbitBadgeMobile 12s linear infinite;
+  }
+
+  .badge-2 {
+    animation: orbitBadgeMobile 12s linear infinite;
+    animation-delay: -6s;
+  }
+}
+
+@keyframes orbitBadgeMobile {
+  0% { transform: rotate(0deg) translateX(145px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(145px) rotate(-360deg); }
 }
