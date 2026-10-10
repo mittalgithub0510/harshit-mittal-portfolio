@@ -1,49 +1,46 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Theme from './pages/Theme';
-import CallIconButton from './components/CallIconButton';
-import Cursor from './components/Cursor';
+import SiteHeader from './components/SiteHeader';
+import SiteFooter from './components/SiteFooter';
+import Hero from './sections/Hero';
+import Education from './sections/Education';
+import Internship from './sections/Internship';
+import Projects from './sections/Projects';
+import Skills from './sections/Skills';
+import Achievements from './sections/Achievements';
+import ContactSection from './sections/ContactSection';
 
 function App() {
-  const [theme, setTheme] = useState('dark');
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('portfolio-theme');
-    if (savedTheme) {
-      setTheme(savedTheme);
-    }
-  }, []);
+  const [theme, setTheme] = useState(() => {
+    const saved = localStorage.getItem('portfolio-theme-bw');
+    return saved === 'dark' ? 'dark' : 'light';
+  });
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('portfolio-theme', theme);
+    localStorage.setItem('portfolio-theme-bw', theme);
   }, [theme]);
 
-  // Handle contact form context (e.g. knowing why the user navigated to contact)
-  // This can be done via React Router state
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
 
   return (
-    <Router>
-      <Cursor />
-      <div className="app-container">
-        <Navbar />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/theme" element={<Theme currentTheme={theme} setTheme={setTheme} />} />
-          </Routes>
-        </main>
-        <Footer />
-        <CallIconButton />
-      </div>
-    </Router>
+    <div className="site">
+      <a className="sr-only" href="#top">
+        Skip to content
+      </a>
+      <SiteHeader theme={theme} onToggleTheme={toggleTheme} />
+      <main>
+        <Hero />
+        <Education />
+        <Internship />
+        <Projects />
+        <Skills />
+        <Achievements />
+        <ContactSection />
+      </main>
+      <SiteFooter />
+    </div>
   );
 }
 
